@@ -1,0 +1,10 @@
+{
+  "name": "specs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "htmlparser2": "^3.9.2"
+  }
+}
