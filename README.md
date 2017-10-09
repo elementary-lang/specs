@@ -4,29 +4,32 @@ By Trip Ottinger and Tom Wilson
 
 A declarative functional language for an aspiring developer!
 
-DISCLAIMER: If you are a professional developer you will most likely hate this language, and that is ok, it is not for you, but it should be very easy to contribute to in your compile to js language of choice. This language is for people interested in software development.
+> DISCLAIMER: If you are a professional developer you'll probably hate this language. This language is for beginners and those new to functional concepts.
 
-Elementary is a Declarative Programming Language, where everything is a function, there are no operators or special constructs, everything is a function. Instead of traditional languages where there are all kinds of choices with syntax, Elementary uses a very common declarative syntax that has been proven to be very descriptive and expressive and compositional.
+Elementary is a Declarative Programming Language where everything is a function. There are no operators or special constructs. Everything is a function. Traditional languages stress the importance of creating the correct syntax. Elementary uses a very common declarative syntax that has been proven to be very descriptive, expressive and compositional.
 
-XML or extensible markup language.
+## Invoking a Function
 
-How do I invoke a function?
+Elementary is very similar to HTML or XML.  Invoking a function is simply a matter of declaring the function name, and providing argument/property/attribute/parameter values to the function. 
 
+```xml
 <[Function Name] argument1=[value] argument2=[value]>
   data
 </[Function Name]>
+```
 
 Or
 
+```xml
 <[Function Name] />
-
+```
 ---
 
-How do I define a function?
+### Defining a function?
 
-Use the Function component to define a function with a name and arguments
+Use the `Function` component to define a function with a name and arguments.
 
-In this example we create a function called Hello
+In this example we create a function called `Hello`.
 
 ``` xml
 <function name=”hello” arg1 arg2>
@@ -39,15 +42,18 @@ Here is how we would invoke the function:
 ``` xml
 <hello arg1=”Big” arg2="World" />
 ```
----
 
-Why create another language?
+## Why create another language?
 
-While teaching programming, one of the largest barriers is the syntax and frankly figuring out how to type on the keyboard and understand how to start and close functions. The current syntax serves developers you are over this bridge very well, but does not serve beginners, there is simply too many options and too many deviations, it confuses the beginner.
+When first encountering a programming language, a student has to overcome many barriers including learning strange syntax, typing the correct symbols on the keyboard, and understanding how to start and close functions. For beginners, there are simply too many options and too many deviations.
 
-Why not a visual language like blockly? I think it is too visual and results is very large and cumbersome patterns, also it does not fit well with modules and file systems. Using a declarative `HTML` like syntax should allow for a lot more flexibility and has been proven to create a cognitive visual expressive style that we has humans are able to relate to when seen consistently.  
+## Why not a visual language like blockly? 
 
-What about XSLT? I think xslt is great for transforming data, but I believe it dropped down to imperative code to do logic. We want elementry to be a language about composability, support closures and higher order functions.
+Blockly is cool but its inheritly visual nature results is very large and cumbersome patterns.  Its code does not fit well within modules and file systems. Elementary's declarative `HTML` like syntax should allow for flexibility and a cognitive visual expressive style.  
+
+## What about XSLT?
+
+Its great for transforming data but imperitive rather than functional.  Elementry is all about composability, closures, and higher order functions.
 
 ``` xml
 <function name=”add” a data>
